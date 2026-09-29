@@ -1,14 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
- <accommodation>
-  <category>two-bedroom flat</category>
-  <room size="double">
-   <rent>£500pcm</rent>
-  </room>
-  <room size="single" >
-   <rent>400pcm</rent>
-  </room>
-  <kitchen>
-   <cooker type="gas">Hotpoint HUE61XS</cooker>
-   <microwave>Panasonic NN-CT555W</microwave>
-  </kitchen>
- </accommodation>
+
+<bibilographic>
+
+    <article>
+        <author>Michael Adams, Arthur H. M. ter Hoftstedde, David Edmond and Wil M. P. van der Aalst</author>
+        <title>A service-oriented implementation of dynamic flexibility in workflows</title>
+        <year>2006</year>
+        <startingpage>291</startingpage>
+        <endingpage>308</endingpage>
+        <journal>Lecture Notes in Computer Science</journal>
+    </article>
+
+    <book>
+        <author>G. Alonso, F. Casati, H.Kuno, V.Machiraju</author>
+        <title>Web Services: Concepts, Architecture and Applications</title>
+        <year>2004</year>
+        <publisher>Springer Verlag</publisher>
+    </book>
+
+    <article>
+        <author>H. Boley, S. Tabet, and G.Wagner</author>
+        <title>Design rationale for ruleml: A markup language for semantic web rules</title>
+        <year>2001</year>
+        <startingpage>381</startingpage>
+        <endingpage>401</endingpage>
+        <journal>SWWS</journal>
+    </article>
+
+    <unpublished>
+        <author>M.G. Buscemi, L. Ferrari, C. Moiso, and U. Montanari</author>
+        <title>Constraint-based policy negotiation and enforcement for telco services</title>
+    </unpublished>
+
+    <website>
+        <url>http://www.w3.org/Submission/WS-Policy/</url>
+        <date>10 Apr</date>
+    </website>
+
+    <article>
+        <author>F. Kamoun</author>
+        <title>A roadmap towards the convergence of business process management and service oriented architecture</title>
+        <year>2007</year>
+        <startingpage>8</startingpage>
+        <endingpage>14</endingpage>
+        <journal>Ubiquity</journal>
+    </article>
+
+</bibilographic>
