@@ -2,22 +2,53 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 <xs:element name ="bibilographic">
+
     <xs:complexType>
+     <xs:choice maxOccurs ="unbounded">
+
+      <xs:element name="article">
+       <xs:complexType>
         <xs:sequence>
-
-            <xs:element name ="author" type="xs:string"/>
-            <xs:element name="title" type="xs:string"/>
-            <xs:element name="publisher" type="xs:string"/>
-            <xs:element name="journal" type="xs:string"/>
-            <xs:element name="date" type="xs:string"/>
-            <xs:element name="url" type="xs:string"/>
-
-
-            <xs:element name="year" type="xs:integer"/>
-            <xs:element name="startingpage" type="xs:integer"/>
-            <xs:element name="endingpage" type="xs:integer"/>
-
+         <xs:element name="author" type="xs:string"/>
+         <xs:element name="title" type="xs:string"/>
+         <xs:element name="year" type="xs:integer"/>
+         <xs:element name="startingpage" type="xs:integer"/>
+         <xs:element name="endingpage" type="xs:integer"/>
+         <xs:element name="journal" type="xs:string"/>
         </xs:sequence>
+       </xs:complexType>
+      </xs:element>
+
+      <xs:element name="book">
+       <xs:complexType>
+        <xs:sequence>
+         <xs:element name="author" type="xs:string"/>
+         <xs:element name="title" type="xs:string"/>
+         <xs:element name="year" type="xs:integer"/>
+         <xs:element name="publisher" type="xs:string"/>
+        </xs:sequence>
+       </xs:complexType>
+      </xs:element>
+
+      <xs:element name="unpublished">
+       <xs:complexType>
+        <xs:sequence>
+         <xs:element name="author" type="xs:string"/>
+         <xs:element name="title" type="xs:string"/>
+        </xs:sequence>
+       </xs:complexType>
+      </xs:element>
+
+      <xs:element name="website">
+       <xs:complexType>
+        <xs:sequence>
+         <xs:element name="url" type="xs:string"/>
+         <xs:element name="date" type="xs:string"/>
+        </xs:sequence>
+       </xs:complexType>
+      </xs:element>
+
+     </xs:choice>
     </xs:complexType>
 </xs:element>
 
