@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <accommodation>
+  <category>two-bedroom flat</category>
+  <room size="double">
+   <rent>£500pcm</rent>
+  </room>
+  <room size="single" >
+   <rent>400pcm</rent>
+  </room>
+  <kitchen>
+   <cooker type="gas">Hotpoint HUE61XS</cooker>
+   <microwave>Panasonic NN-CT555W</microwave>
+  </kitchen>
+ </accommodation>
