@@ -2,15 +2,25 @@
 	"bibilographic": {
 		"article": [
 			{
-				"author": "Michael Adams, Arthur H. M. ter Hoftstedde, David Edmond and Wil M. P. van der Aalst",
+				"author": [
+					"Michael Adams",
+					"Arthur H. M. ter Hoftstedde",
+					"David Edmond",
+					"Wil M. P. van der Aalst"
+				],
 				"title": "A service-oriented implementation of dynamic flexibility in workflows",
 				"year": "2006",
 				"startingpage": "291",
 				"endingpage": "308",
-				"journal": "Lecture Notes in Computer Science"
+				"journal": "Lecture Notes in Computer Science",
+				"publisher": "Springer"
 			},
 			{
-				"author": "H. Boley, S. Tabet, and G.Wagner",
+				"author": [
+					"H. Boley",
+					"S. Tabet",
+					"G.Wagner"
+				],
 				"title": "Design rationale for ruleml: A markup language for semantic web rules",
 				"year": "2001",
 				"startingpage": "381",
@@ -23,22 +33,36 @@
 				"year": "2007",
 				"startingpage": "8",
 				"endingpage": "14",
-				"journal": "Ubiquity"
+				"journal": "Ubiquity",
+				"publisher": "ACM Press"
 			}
 		],
 		"book": {
-			"author": "G. Alonso, F. Casati, H.Kuno, V.Machiraju",
+			"author": [
+				"G. Alonso",
+				"F. Casati",
+				"H. Kuno",
+				"V. Machiraju"
+			],
 			"title": "Web Services: Concepts, Architecture and Applications",
 			"year": "2004",
-			"publisher": "Springer Verlag"
+			"publisher": "Springer"
 		},
 		"unpublished": {
-			"author": "M.G. Buscemi, L. Ferrari, C. Moiso, and U. Montanari",
-			"title": "Constraint-based policy negotiation and enforcement for telco services"
+			"author": [
+				"M.G. Buscemi",
+				"L. Ferrari",
+				"C. Moiso",
+				"U. Montanari"
+			],
+			"title": "Constraint-based policy negotiation and enforcement for telco services",
+			"year": "2007"
 		},
 		"website": {
 			"url": "http://www.w3.org/Submission/WS-Policy/",
-			"date": "10 Apr"
+			"date": "2006-04-10",
+			"author": "J. Schlimmer",
+			"title": "Web services policy 1.2 – framework (WS-Policy)"
 		}
 	}
 }
