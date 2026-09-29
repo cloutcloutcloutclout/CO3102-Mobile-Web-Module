@@ -1,55 +1,62 @@
 <?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xsd:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-<xs:element name ="bibilographic">
+ <xsd:complexType name ="article">
+  <xsd:sequence>
+   <xsd:element name="author" type="xsd:string" maxOccurs="unbounded"/>
+   <xsd:element name="title" type="xsd:string"/>
+   <xsd:element name="year" type="xsd:integer"/>
+   <xsd:element name="publisher" type="xsd:string"/>
+   <xsd:element name="startingpage" type="xsd:integer"/>
+   <xsd:element name="endingpage" type="xsd:integer"/>
+   <xsd:element name="journal" type="xsd:string"/>
+  </xsd:sequence>
+ </xsd:complexType>
 
-    <xs:complexType>
-     <xs:choice maxOccurs ="unbounded"> <!-- change to 6 if u want for this example we're doing on lab-1 >
+ <xsd:complexType name="website">
+    <xsd:sequence>
+      <xsd:element name="url" type="xsd:string"/>
+      <xsd:element name="date" type="xsd:date"/>
+      <xsd:element name="author" type="xsd:string"  maxOccurs="unbounded"/>
+      <xsd:element name="title" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
 
-      <xs:element name="article">
-       <xs:complexType>
-        <xs:sequence>
-         <xs:element name="author" type="xs:string"/>
-         <xs:element name="title" type="xs:string"/>
-         <xs:element name="year" type="xs:integer"/>
-         <xs:element name="startingpage" type="xs:integer"/>
-         <xs:element name="endingpage" type="xs:integer"/>
-         <xs:element name="journal" type="xs:string"/>
-        </xs:sequence>
-       </xs:complexType>
-      </xs:element>
+ <xsd:complexType name ="unpublished">
+  <xsd:sequence>
+   <xsd:element name="author" type="xsd:string" maxOccurs="unbounded"/>
+   <xsd:element name="title" type="xsd:string"/>
+   <xsd:element name="year" type="xsd:integer"/>
+  </xsd:sequence>
+ </xsd:complexType>
 
-      <xs:element name="book">
-       <xs:complexType>
-        <xs:sequence>
-         <xs:element name="author" type="xs:string"/>
-         <xs:element name="title" type="xs:string"/>
-         <xs:element name="year" type="xs:integer"/>
-         <xs:element name="publisher" type="xs:string"/>
-        </xs:sequence>
-       </xs:complexType>
-      </xs:element>
+ <xsd:complexType name ="book">
+  <xsd:sequence>
+   <xsd:element name="author" type="xsd:string" maxOccurs="unbounded"/>
+   <xsd:element name="title" type="xsd:string"/>
+   <xsd:element name="year" type="xsd:integer"/>
+   <xsd:element name="publisher" type="xsd:string"/>
+  </xsd:sequence>
+ </xsd:complexType>
 
-      <xs:element name="unpublished">
-       <xs:complexType>
-        <xs:sequence>
-         <xs:element name="author" type="xs:string"/>
-         <xs:element name="title" type="xs:string"/>
-        </xs:sequence>
-       </xs:complexType>
-      </xs:element>
+  <xsd:complexType name ="website">
+  <xsd:sequence>
+   <xsd:element name="author" type="xsd:string" maxOccurs="unbounded"/>
+   <xsd:element name="url" type="xsd:string"/>
+   <xsd:element name="title" type="xsd:string"/>
+   <xsd:element name="date" type="xsd:date"/>
+  </xsd:sequence>
+ </xsd:complexType>
 
-      <xs:element name="website">
-       <xs:complexType>
-        <xs:sequence>
-         <xs:element name="url" type="xs:string"/>
-         <xs:element name="date" type="xs:string"/>
-        </xs:sequence>
-       </xs:complexType>
-      </xs:element>
+  <xsd:complexType name="bibilographic">
+      <xsd:choice minOccurs="0" maxOccurs="unbounded">
+		<xsd:element name="book" type="book"/>
+		<xsd:element name="article" type="article"/>
+		<xsd:element name="website" type="website"/>
+		<xsd:element name="unpublished" type="unpublished"/>
+      </xsd:choice>
+  </xsd:complexType>
 
-     </xs:choice>
-    </xs:complexType>
-</xs:element>
+  <xsd:element name="bibilographic" type="bibilographic"/>
 
-</xs:schema>
+</xsd:schema>
